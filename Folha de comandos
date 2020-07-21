@@ -13,4 +13,10 @@ py manage.py runserver
 - Parar o servidor
 ctrl + c
 
+- Criar tabelas no banco de dados
+py manage.py migrate
+
+- Criar supser usuário
+py manage.py createsuperuser
+
 
