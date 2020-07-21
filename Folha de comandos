@@ -1,0 +1,16 @@
+- Criar e a tivar virtual env (Windows)
+python -m venv venv
+cd venv
+cd Script
+activate
+
+- Criar projeto django
+django-admin startproject blog
+
+- Rodar projeto
+py manage.py runserver
+
+- Parar o servidor
+ctrl + c
+
+
