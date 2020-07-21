@@ -19,4 +19,24 @@ py manage.py migrate
 - Criar supser usuário
 py manage.py createsuperuser
 
+- Começar projeto git
+git init
+
+- Fazer commit
+git add .
+git commit -m "First Commit"
+git push origin master
+git push -m origin master
+git push origin master --Force
+
+- Add remote
+git remote add origin endereço
+git remote add origin https://github.com/Erickson-lopes-dev/django-development-3
+
+- Listar Branchs
+git branch -v
+
+- Status do versionamento
+git status
+
 
