@@ -18,5 +18,14 @@
     {% endfor %}
 </ol>
 
+<ul>
+    {% for post in posts %}
+        <li>{{ post.title }}</li>
+        <li>{{ post.sub_title }}</li>
+        <li>{{ post.content }}</li>
+        <br>
+    {% endfor %}
+</ul>
+
 </body>
 </html>
