@@ -48,16 +48,20 @@
 						<div class="row">
 							{% for post in posts %}
 								<article class="col-6 col-12-xsmall work-item">
-									<a href="{% static 'images/fulls/01.jpg' %}" class="image fit thumb"><img src="{% static 'images/thumbs/01.jpg' %}" alt="" /></a>
+<!--									<a href="{% static 'images/fulls/01.jpg' %}" class="image fit thumb"><img src="{% static 'images/thumbs/01.jpg' %}" alt="" /></a>-->
 									<h3>{{ post.title }}</h3>
 									<p>{{ post.sub_title }}</p>
 									<span>{{ post.get_category_label }}</span>
+									<ul class="actions">
+							<li>
+								<a href="{% url 'post_detail' post.id %}" class="button">Leia mais</a></li>
+							</ul>
 								</article>
 							{% endfor %}
 						</div>
-						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
-						</ul>
+<!--						<ul class="actions">-->
+<!--							<li><a href="#" class="button">Full Portfolio</a></li>-->
+<!--						</ul>-->
 					</section>
 
 				<!-- Three -->

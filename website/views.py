@@ -3,7 +3,7 @@ from .models import Post
 
 
 def hello_blog(request):
-    lista = ['django', 'python', 'git', 'HTML', 'linux', 'Nginux', 'Banco de dados',  'Systemctl']
+    lista = ['django', 'python', 'git', 'HTML', 'linux', 'Nginux', 'Banco de dados', 'Systemctl']
     list_posts = Post.objects.filter(approved=True)
     # list_posts = Post.objects.all()
 
@@ -14,3 +14,8 @@ def hello_blog(request):
     }
 
     return render(request, 'index.html', data)
+
+
+def post_detail(request, id):
+    post = Post.objects.get(id=id)
+    return render(request, 'post_detail.html', {'post': post})
