@@ -1,2 +1,4 @@
 venv_django
 .idea
+db.sqlite3
+media
