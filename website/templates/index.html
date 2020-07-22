@@ -33,14 +33,13 @@
 							<h2>Erickson Lopes - Blog</h2>
 						</header>
 						<p>
-							Desde minha infância, sempre gostei de aprender coisas novas e encontrei na programação um
-							gosto especial. Como meta tenho ingressar minha carreira na área da programação com grande
-							foco e estou apto a receber novas oportunidades.
-							<br />
 							Foi uma experiência e tanto desenvolver essa página!
+							<br />
+							Como teste, Coloquei alguns dos grandes filósofos e um pouco de sua biografia.
+
 						</p>
 						<ul class="actions">
-							<li><a href="https://www.linkedin.com/in/ericksonlopesdev/" class="button">Saber mais</a></li>
+							<li><a href="https://www.linkedin.com/in/ericksonlopesdev/" class="button">Saber mais sobre Erickson</a></li>
 						</ul>
 					</section>
 
@@ -68,30 +67,31 @@
 
 				<!-- Three -->
 					<section id="three">
-						<h2>Get In Touch</h2>
-						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+						<h2>Entre em Contato</h2>
+						<p>Me mande uma mensagem! tentarei retornar assim que possível.</p>
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<form method="post" action="#">
+								<form method="post" action="{% url 'save_form' %}">
+									{% csrf_token %}
 									<div class="row gtr-uniform gtr-50">
 										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
 										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
 										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 									</div>
+										<input type="submit" value="Enviar mensagem" />
+
 								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
+
 							</div>
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
 									<li>
 										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										(11) 94360-4897
+										(11) 94360-****
 									</li>
 									<li>
 										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										ofc.erickson@gmail.com
+										ericksonlopes20@gmail.com
 									</li>
 								</ul>
 							</div>

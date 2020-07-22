@@ -31,3 +31,9 @@ class Post(models.Model):
 
     # ordenando o full name no admin
     full_name.admin_order_field = 'title'
+
+
+class Contact(models.Model):
+    name = models.CharField(max_length=150)
+    email = models.EmailField()
+    message = models.TextField()
