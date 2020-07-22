@@ -3,7 +3,7 @@ from .models import Post
 
 
 class PostAdmin(admin.ModelAdmin):
-    list_display = ['id', 'title', 'sub_title', 'full_name']
+    list_display = ['title', 'id', 'sub_title', 'full_name', 'cetegories']
     # barra de pesquisa
     search_fields = ['title', 'sub_title']
 
