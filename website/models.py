@@ -24,5 +24,8 @@ class Post(models.Model):
     def full_name(self):
         return f"{self.title} {self.sub_title}"
 
+    def get_category_label(self):
+        return self.get_cetegories_display()
+
     # ordenando o full name no admin
     full_name.admin_order_field = 'title'

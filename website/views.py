@@ -4,7 +4,8 @@ from .models import Post
 
 def hello_blog(request):
     lista = ['django', 'python', 'git', 'HTML', 'linux', 'Nginux', 'Banco de dados',  'Systemctl']
-    list_posts = Post.objects.all()
+    list_posts = Post.objects.filter(approved=True)
+    # list_posts = Post.objects.all()
 
     data = {
         'name': 'Curso de Django 3',
