@@ -16,6 +16,7 @@ class Post(models.Model):
         choices=Categorias.choices,
         default=Categorias.GR,
     )
+    approved = models.BooleanField(default=True)
 
     def __str__(self):
         return self.title
