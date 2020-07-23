@@ -49,7 +49,9 @@
 						<div class="row">
 							{% for post in posts %}
 								<article class="col-6 col-12-xsmall work-item">
-									<a href="{{ post.imagem.url }}" class="image fit thumb"><img src="{{ post.imagem.url }}" alt="" height="400" /></a>
+									<a href="{{ post.imagem.url }}" class="image fit thumb">
+										<img src="{{ post.imagem.url }}" alt="{{ post.title }}" height="400" />
+									</a>
 									<h3>{{ post.title }}</h3>
 									<p>{{ post.sub_title }}</p>
 									<span>{{ post.get_category_label }}</span>
@@ -60,9 +62,9 @@
 								</article>
 							{% endfor %}
 						</div>
-<!--						<ul class="actions">-->
-<!--							<li><a href="#" class="button">Full Portfolio</a></li>-->
-<!--						</ul>-->
+						<ul class="actions">
+							<li><a href="#" class="button">Voltar ao topo</a></li>
+						</ul>
 					</section>
 
 				<!-- Three -->
